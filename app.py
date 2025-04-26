@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import (
     QApplication,
     QWidget,
     QVBoxLayout,
+    QHBoxLayout,
     QPushButton,
     QFileDialog,
     QMessageBox,
@@ -26,12 +27,12 @@ class Janela(QWidget):
         self.df2 = None
 
         layout = QVBoxLayout()
+        layout_table = QHBoxLayout()
 
-        self.table = QTableView()
-        layout.addWidget(self.table)
+        self.table_primeiro_arquivo = QTableView()
+        self.table_segundo_arquivo = QTableView()
 
         self.progress_bar = QProgressBar()
-        layout.addWidget(self.progress_bar)
 
         self.button1 = QPushButton("Abrir arquivo")
         self.button1.clicked.connect(self.abrir_arquivo1)
@@ -42,21 +43,21 @@ class Janela(QWidget):
         self.button_comparar = QPushButton("Comparar planilhas")
         self.button_comparar.clicked.connect(self.comparar_planilhas)
 
-        self.button_exportar = QPushButton("Exportar planilha")
-        self.button_exportar.clicked.connect(self.conectar_exportar)
-
+        layout.addLayout(layout_table)
+        layout_table.addWidget(self.table_primeiro_arquivo)
+        layout_table.addWidget(self.table_segundo_arquivo)
+        layout.addWidget(self.progress_bar)
         layout.addWidget(self.button1)
         layout.addWidget(self.button2)
         layout.addWidget(self.button_comparar)
-        layout.addWidget(self.button_exportar)
         self.setLayout(layout)
 
     def abrir_arquivo1(self):
         self.df1 = self.carregar_excel()
         if self.df1 is not None:
             model = PandasModel(self.df1)
-            self.table.setModel(model)
-            self.table.setSortingEnabled(True)
+            self.table_primeiro_arquivo.setModel(model)
+            self.table_primeiro_arquivo.setSortingEnabled(True)
             QMessageBox.information(
                 self, "Arquivo 1", f"{len(self.df1)} linhas carregadas"
             )
@@ -64,7 +65,9 @@ class Janela(QWidget):
     def abrir_arquivo2(self):
         self.df2 = self.carregar_excel()
         if self.df2 is not None:
-            print(self.df2)
+            model = PandasModel(self.df2)
+            self.table_segundo_arquivo.setModel(model)
+            self.table_segundo_arquivo.setSortingEnabled(True)
             QMessageBox.information(
                 self, "Arquivo 2", f"{len(self.df2)} linhas carregadas!"
             )
@@ -103,20 +106,41 @@ class Janela(QWidget):
             self.comparado["Diferença"] / self.comparado["Previsto"]
         ) * 100
 
-        model = PandasModel(self.comparado)
-        self.table.setModel(model)
-        self.table.setSortingEnabled(True)
+        self.janela_comparacao = JanelaComparacao(self.comparado)
+        self.janela_comparacao.show()
 
-    def exportar_excel(self, comparado):
+    def conectar_exportar(self):
+        self.exportar_excel(self.comparado)
+
+class JanelaComparacao(QWidget):
+    def __init__(self, df):
+        super().__init__()
+        self.setWindowTitle("Comparação")
+        self.resize(600, 400)
+        self.setMinimumSize(400, 200)
+
+        self.df = df
+
+        layout = QVBoxLayout()
+
+        table = QTableView()
+        table.setModel(PandasModel(df))
+
+        self.button = QPushButton("Exportar")
+        self.button.clicked.connect(self.exportar_excel)
+
+        layout.addWidget(table)
+        layout.addWidget(self.button)
+        self.setLayout(layout)
+
+    def exportar_excel(self):
         file_path, _ = QFileDialog.getSaveFileName(
             self, "Salvar arquivo", "", "Excel Files (*.xlsx);;All Files (*)"
         )
         if file_path:
-            comparado.to_excel(file_path, index=False)
+            self.df.to_excel(file_path, index=False)
             QMessageBox.information(self, "Sucesso", "Arquivo salvo com sucesso.")
 
-    def conectar_exportar(self):
-        self.exportar_excel(self.comparado)
 
 
 class PandasModel(QAbstractTableModel):
