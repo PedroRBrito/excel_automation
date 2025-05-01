@@ -1,6 +1,6 @@
 # **Comparador de Planilhas Excel**
 
-<img src="assets/janela.png" alt="Tela Principal" width="500">
+<img src="assets/janela.png" alt="Tela Principal" width="800">
 
 Um aplicativo desenvolvido em Python com PyQt5 para comparar planilhas Excel, realizar cálculos personalizados e exibir os resultados de forma clara e intuitiva.
 
