@@ -85,5 +85,5 @@ Certifique-se de ter o Python 3.9 ou superior instalado em sua máquina. Instale
 ### **Passos**
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/excel-automation.git
+   git clone https://github.com/PedroRBrito/excel-automation.git
    cd excel-automation
