@@ -1,6 +1,6 @@
 # **Comparador de Planilhas Excel**
 
-<img src="assets/janela.png" alt="Tela Principal" width="800">
+<img src="assets/demo_excel_automation.gif" alt="Demo" width="800">
 
 Um aplicativo desenvolvido em Python com PyQt5 para comparar planilhas Excel, realizar cálculos personalizados e exibir os resultados de forma clara e intuitiva.
 
@@ -85,5 +85,5 @@ Certifique-se de ter o Python 3.9 ou superior instalado em sua máquina. Instale
 ### **Passos**
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/excel-automation.git
+   git clone https://github.com/PedroRBrito/excel-automation.git
    cd excel-automation
