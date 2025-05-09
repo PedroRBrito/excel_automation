@@ -1,5 +1,7 @@
 # **Comparador de Planilhas Excel**
 
+> Se o GIF abaixo não rodar automaticamente, clique no ícone "play" no canto superior direito da imagem ou verifique suas [configurações de acessibilidade no GitHub](https://github.com/settings/accessibility).
+
 <img src="assets/demo_excel_automation.gif" alt="Demo" width="800">
 
 Um aplicativo desenvolvido em Python com PyQt5 para comparar planilhas Excel, realizar cálculos personalizados e exibir os resultados de forma clara e intuitiva.
@@ -17,7 +19,7 @@ Um aplicativo desenvolvido em Python com PyQt5 para comparar planilhas Excel, re
 
 ---
 
-- **Lista de colunas para realizar os cálculos**:
+**Lista de colunas para realizar os cálculos**:
 
 <img src="assets/coluna_calculo.png" alt="Escolha de colunas para os cálculos" width="00">
 
@@ -26,7 +28,7 @@ Um aplicativo desenvolvido em Python com PyQt5 para comparar planilhas Excel, re
 
 ---
 
-- **Comparação de Dados**:
+**Comparação de Dados**:
 
 <img src="assets/calculos.png" alt="Cálculos possíveis" width="800">
 
@@ -41,7 +43,7 @@ Um aplicativo desenvolvido em Python com PyQt5 para comparar planilhas Excel, re
 
 ---
 
-- **Janela de Comparação**:
+**Janela de Comparação**:
 
 <img src="assets/janela_comparacao.png" alt="Janela de Comparação" width="500">
 
@@ -50,7 +52,7 @@ Um aplicativo desenvolvido em Python com PyQt5 para comparar planilhas Excel, re
 
 ---
 
-- **Selecionar Colunas para Exportação**:
+**Selecionar Colunas para Exportação**:
 
 <img src="assets/colunas_exportar_selecao.png" alt="Seleção de colunas para exportação" width="500">
 
@@ -59,7 +61,7 @@ Um aplicativo desenvolvido em Python com PyQt5 para comparar planilhas Excel, re
 
 ---
 
-- **Exportar Resultados**:
+**Exportar Resultados**:
 
 <img src="assets/salvando_excel.png" alt="Salvando excel na pasta" width="500">
 
