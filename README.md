@@ -4,7 +4,9 @@
 
 <img src="assets/demo_excel_automation.gif" alt="Demo" width="800">
 
-Um aplicativo desenvolvido em Python com PyQt5 para comparar planilhas Excel, realizar cálculos personalizados e exibir os resultados de forma clara e intuitiva.
+Um aplicativo desenvolvido em Python com PyQt5 e Pandas para comparar planilhas Excel, realizar cálculos personalizados e exibir os resultados de forma clara e intuitiva.
+
+Este projeto foi criado para automatizar o tratamento de dados de planilhas, economizando tempo em tarefas repetitivas como: leitura, limpeza, e exportação de informações. É útil para quem trabalha com grandes volumes de dados no Excel e precisa de uma interface simples para processá-los com um clique.
 
 ---
 
