@@ -86,6 +86,8 @@ Este projeto foi criado para automatizar o tratamento de dados de planilhas, eco
 ### **Pré-requisitos**
 Certifique-se de ter o Python 3.9 ou superior instalado em sua máquina. Instale as dependências do projeto usando o `pip`.
 
+> O pacote PyQt5 precisa ser instalado manualmente com `pip install PyQt5`.
+
 ### **Passos**
 1. Clone o repositório:
    ```bash
