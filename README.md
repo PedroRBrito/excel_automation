@@ -79,7 +79,7 @@ Este projeto foi criado para automatizar o tratamento de dados de planilhas, eco
 ## **Como Executar o Projeto**
 
 ### **Pré-requisitos**
-Certifique-se de ter o Python 3.9 ou superior instalado em sua máquina. Instale as dependências do projeto usando o `pip`.
+Certifique-se de ter o Python 3.10 ou superior instalado em sua máquina. Instale as dependências do projeto usando o `pip`.
 
 > O pacote PyQt5 precisa ser instalado manualmente com `pip install PyQt5`.
 
