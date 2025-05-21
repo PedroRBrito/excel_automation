@@ -69,7 +69,7 @@ Este projeto foi criado para automatizar o tratamento de dados de planilhas, eco
 
 <img src="assets/excel_salvo.png" alt="Arquivo excel aberto" width="500">
 
-  - Permite exportar os resultados da comparação para um arquivo Excel ou CSV.
+  - Permite exportar os resultados da comparação para um arquivo Excel.
 
 ---
 
@@ -78,6 +78,7 @@ Este projeto foi criado para automatizar o tratamento de dados de planilhas, eco
 - **Python 3.9+**
 - **PyQt5**: Para a interface gráfica.
 - **Pandas**: Para manipulação de dados.
+- **Openpyxl** = Para gerenciar arquivos .xlsx
 
 ---
 
