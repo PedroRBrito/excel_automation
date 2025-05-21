@@ -8,29 +8,27 @@ Um aplicativo desenvolvido em Python com PyQt5 e Pandas para comparar planilhas 
 
 Este projeto foi criado para automatizar o tratamento de dados de planilhas, economizando tempo em tarefas repetitivas como: leitura, limpeza, e exportação de informações. É útil para quem trabalha com grandes volumes de dados no Excel e precisa de uma interface simples para processá-los com um clique.
 
----
+
 
 ## **Funcionalidades**
 
-- **Carregar Planilhas**:
+### **Carregar Planilhas**:
 
 <img src="assets/table_carregada.png" alt="Planilha carregada" width="500">
 
   - Permite carregar duas planilhas Excel para comparação.
   - Exibe os dados carregados em tabelas interativas.
 
----
 
-**Lista de colunas para realizar os cálculos**:
+### **Lista de colunas para realizar os cálculos**:
 
 <img src="assets/coluna_calculo.png" alt="Escolha de colunas para os cálculos" width="00">
 
   - Após carregar os arquivos, o usuário pode selecionar as colunas de cada planilha que serão usadas como base para os cálculos.
   - O programa permite escolher as colunas específicas de cada planilha.
 
----
 
-**Comparação de Dados**:
+### **Comparação de Dados**:
 
 <img src="assets/calculos.png" alt="Cálculos possíveis" width="800">
 
@@ -43,27 +41,23 @@ Este projeto foi criado para automatizar o tratamento de dados de planilhas, eco
     - Média
     - Diferença Percentual
 
----
-
-**Janela de Comparação**:
+### **Janela de Comparação**:
 
 <img src="assets/janela_comparacao.png" alt="Janela de Comparação" width="500">
 
   - Após a comparação, os resultados são exibidos em uma nova janela.
   - O usuário pode visualizar os dados comparados em uma tabela interativa.
 
----
 
-**Selecionar Colunas para Exportação**:
+### **Selecionar Colunas para Exportação**:
 
 <img src="assets/colunas_exportar_selecao.png" alt="Seleção de colunas para exportação" width="500">
 
   - Na Janela de Comparação, o usuário pode escolher quais colunas do resultado final serão exportadas.
   - Na lista é permitido selecionar as colunas desejadas.
 
----
 
-**Exportar Resultados**:
+### **Exportar Resultados**:
 
 <img src="assets/salvando_excel.png" alt="Salvando excel na pasta" width="500">
 
@@ -71,7 +65,7 @@ Este projeto foi criado para automatizar o tratamento de dados de planilhas, eco
 
   - Permite exportar os resultados da comparação para um arquivo Excel.
 
----
+
 
 ## **Tecnologias Utilizadas**
 
@@ -80,7 +74,7 @@ Este projeto foi criado para automatizar o tratamento de dados de planilhas, eco
 - **Pandas**: Para manipulação de dados.
 - **Openpyxl**: Para gerenciar arquivos .xlsx.
 
----
+
 
 ## **Como Executar o Projeto**
 
