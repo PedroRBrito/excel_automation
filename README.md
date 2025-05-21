@@ -75,10 +75,10 @@ Este projeto foi criado para automatizar o tratamento de dados de planilhas, eco
 
 ## **Tecnologias Utilizadas**
 
-- **Python 3.9+**
+- **Python 3.10+**
 - **PyQt5**: Para a interface gráfica.
 - **Pandas**: Para manipulação de dados.
-- **Openpyxl** = Para gerenciar arquivos .xlsx
+- **Openpyxl**: Para gerenciar arquivos .xlsx.
 
 ---
 
